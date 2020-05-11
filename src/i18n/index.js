@@ -11,10 +11,10 @@ i18n
   .use(initReactI18next)
   .init({
     debug: isDevelopmentOrTest(),
-    lng: 'en',
-    fallbackLng: 'en',
+    lng: 'english',
+    fallbackLng: 'english',
     backend: {
-      loadPath: '/locales/{{lng}}.json',
+      loadPath: 'https://api.covid19india.org/locales/locale_{{lng}}.json',
       addPath: 'http://localhost:9999/',
     },
     saveMissing: isDevelopmentOrTest(),
